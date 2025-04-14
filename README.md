@@ -12,4 +12,4 @@ This is a web application built as part of a Coursera lab project. It allows use
 ## Screenshot
 
 ![Preview](Preview.png)
-![End Result] (Last_Result.png)
+![End Result](Last_Result.png)
