@@ -11,5 +11,5 @@ This is a web application built as part of a Coursera lab project. It allows use
 
 ## Screenshot
 
-![Preview](preview.png)
+![Preview](Preview.png)
 ![End Result] (Last_Result.png)
