@@ -23,5 +23,5 @@ To build the seat selector app, I started by designing the layout in `index.html
 
 ## Screenshot
 
-![Preview](preview.png)
+![Preview](Preview.png)
 ![End Result](Last_Result.png)
