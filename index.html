@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinema Seat Map</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Cinema Seat Map</h1>
+
+    <!-- Legend for seat types -->
+    <div class="legend">
+        <div class="legend-item">
+            <div class="available"></div>Available
+        </div>
+        <div class="legend-item">
+            <div class="reserved"></div>Reserved
+        </div>
+        <div class="legend-item">
+            <div class="selected"></div>Selected
+        </div>
+        <div class="legend-item">
+            <div class="vip"></div>VIP
+        </div>
+    </div>
+
+    <!-- Reserve button -->
+    <button class="reserve-button" disabled>Reserve Seat</button>
+
+    <!-- Booking confirmation -->
+    <div class="booking-confirmation" style="display: none;"></div>
+
+    <!-- Full seat map layout for larger screens -->
+    <section class="cinema-layout"></section>
+
+    <!-- Zoomed-in area view for desktop -->
+    <section class="area-detail" style="display: none;">
+        <button class="back-button">Back to Full Map</button>
+        <div class="area-content"></div>
+    </section>
+
+    <!-- Sector view for smaller screens -->
+    <div class="sector-buttons">
+        <button onclick="showSector('Main-Floor')">Main Floor</button>
+        <button onclick="showSector('Left-Balcony')">Left Balcony</button>
+        <button onclick="showSector('Right-Balcony')">Right Balcony</button>
+    </div>
+
+    <section class="sector" id="Main-Floor"></section>
+    <section class="sector" id="Left-Balcony"></section>
+    <section class="sector" id="Right-Balcony"></section>
+
+    <!-- Include jQuery and scripts -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="seat.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
